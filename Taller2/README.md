@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="face.png"  width="512" height="384">
+    <p><img src="face.png"  width="512" height="384"></p>
     <img src="facegray.png"  width="512" height="384">
     <img src="facefiltro.png"  width="512" height="384">
 </div>
