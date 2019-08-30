@@ -1,7 +1,7 @@
-![alt text](face.png "Foto a Color" = 250x250)
-<img src="face.png"  width="250" height="250">
-![alt text](facegray.png "Foto en Escala de Grices" = 250x250)
-![alt text](facefiltro.png "Foto con Suavizado" = 250x250)
+![alt text](face.png "Foto a Color")
+<img src="face.png"  width="512" height="384">
+![alt text](facegray.png "Foto en Escala de Grices")
+![alt text](facefiltro.png "Foto con Suavizado")
 
 Codigo
 ```python
