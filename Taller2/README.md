@@ -1,7 +1,8 @@
-![alt text](face.png "Foto a Color")
+<center>
 <img src="face.png"  width="512" height="384">
-![alt text](facegray.png "Foto en Escala de Grices")
-![alt text](facefiltro.png "Foto con Suavizado")
+<img src="facegray.png"  width="512" height="384">
+<img src="facefiltro.png"  width="512" height="384">
+</center>
 
 Codigo
 ```python
