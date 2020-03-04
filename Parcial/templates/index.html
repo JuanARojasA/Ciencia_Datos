@@ -1,0 +1,40 @@
+{% extends './base.html'%}
+{% block title %}
+    <title>Tweepy - inicio</title>
+{% endblock %}
+{% block body %}
+<div class="container p-2">            
+    <h2>Criterio de Análisis</h2>
+    <div class="row">
+        <form action="/analisisgeneral" method="POST">
+            <div class="form-group">
+                <button class="btn btn-danger">Realizar Análisis General</button>
+            </div>            
+        </form>
+    </div>
+    <hr>
+    <div class="row">
+        
+        <div class="col">
+            <form action="/analisisIndividual" method="POST">
+                <div class="form-group">
+                    
+                    <select class="form-control" id="selecTeam" name="selecTeam">                 
+                        <option>TeamVitality</option>
+                        <option>VeloceEsports</option>
+                        <option>SNG_Esports</option>
+                        <option>mousesports</option>
+                        <option>KnightsGG</option>
+                        <option>GhostGaming</option>
+                        <option>G2Esports</option>
+                        <option>TeamReciprocity</option>
+                    </select>
+                </div>
+        
+        
+                <button class="btn btn-danger">Realizar Análisis</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

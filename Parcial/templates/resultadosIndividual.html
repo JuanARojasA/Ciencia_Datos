@@ -1,0 +1,85 @@
+{% extends './base.html'%}
+{% block title %}
+    <title>Tweepy - análisis</title>
+{% endblock %}
+{% block body%}
+<div class="container p-2">   
+    <div class="row">
+        <div class="col">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>{{team.nombre}}</h3>
+                    <span>@{{team.screenNombre}}</span>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-sm-center align-items-center">
+                        <div class="col-md-6">
+                            <img src="/static/img/{{team.nombreCod}}.png" class="card-img-top mx-aux m-2">
+                        </div>                        
+                        <div class="col-md-6">
+                            
+                            <p>
+                                Número de seguidores: {{team.seguidores}}<br>
+                                Número de tweets: {{team.tweets}}<br>
+                                Originario de: {{team.locacion}}<br>
+                                Fecha de Creación: {{team.fechaCreacion}}<br>
+                            </p>
+                            
+                                                        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group" mclass="form-control">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>Dispositivos usados para twitear este equipo</h4>
+                                    <img src="/static/img/{{team.nombreCod}}Pie.png" alt="logo virtus" class="card-img-top mx-aux m-2" class="grafica">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Horarios en los que más se twitea este equipo</h4>
+                                    <img src="/static/img/{{team.nombreCod}}Bar.png" alt="logo virtus" class="card-img-top mx-aux m-2" class="grafica">
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>           
+            
+        </div>
+    </div>
+    <hr>
+    <h2>Realizar más busquedas</h2>
+    <h3>Criterio de Análisis</h3>
+    <div class="row">
+        <form action="/analisisgeneral" method="POST">
+            <div class="form-group">
+                <button class="btn btn-danger">Realizar Análisis General</button>
+            </div>            
+        </form>
+    </div>
+    <hr>
+    <div class="row">
+        
+        <div class="col">
+            <form action="/analisisIndividual" method="POST">
+                <div class="form-group">
+                    
+                    <select class="form-control" id="selecTeam" name="selecTeam">                 
+                        <option>TeamVitality</option>
+                        <option>VeloceEsports</option>
+                        <option>SNG_Esports</option>
+                        <option>mousesports</option>
+                        <option>KnightsGG</option>
+                        <option>GhostGaming</option>
+                        <option>G2Esports</option>
+                        <option>TeamReciprocity</option>
+                    </select>
+                </div>
+        
+        
+                <button class="btn btn-danger">Realizar Análisis</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
